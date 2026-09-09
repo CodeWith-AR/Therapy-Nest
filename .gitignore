@@ -1,0 +1,64 @@
+# ==============================================================================
+# Therapy-Nest Monorepo Root .gitignore
+# ==============================================================================
+
+# ── 1. Critical Secrets & API Credentials (NEVER COMMIT) ──────────────────────
+google-services.json
+**/google-services.json
+GoogleService-Info.plist
+**/GoogleService-Info.plist
+*.env
+**/*.env
+.env*
+**/.env*
+key.properties
+**/key.properties
+*.keystore
+**/*.keystore
+*.jks
+**/*.jks
+
+# ── 2. Local Databases & Logs ─────────────────────────────────────────────────
+*.db
+**/*.db
+*.sqlite
+**/*.sqlite
+*.sqlite-journal
+**/*.sqlite-journal
+*.log
+**/*.log
+
+# ── 3. Flutter & Dart Artifacts ───────────────────────────────────────────────
+**/build/
+**/.dart_tool/
+**/.pub-cache/
+**/.pub/
+**/.flutter-plugins-dependencies
+**/.flutter-plugins
+**/ios/Flutter/.last_build_id
+**/doc/api/
+
+# ── 4. Python Backend & Virtual Environments ──────────────────────────────────
+**/venv/
+**/.venv/
+**/env/
+**/ENV/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+
+# ── 5. Separate Repositories (Managed in their own GitHub repos) ───────────────
+# The website has its own repository: https://github.com/CodeWith-AR/Therapy-Nest-Web.git
+Website Development/
+
+# ── 6. IDEs & Operating System Artifacts ──────────────────────────────────────
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.iml
+**/*.iml
+.DS_Store
+Thumbs.db

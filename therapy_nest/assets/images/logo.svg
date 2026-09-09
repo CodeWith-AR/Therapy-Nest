@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Nest base -->
+  <ellipse cx="100" cy="140" rx="70" ry="30" fill="#E8F3FF" stroke="#2B7BC8" stroke-width="3"/>
+  <ellipse cx="100" cy="135" rx="60" ry="25" fill="#F7F9FC" stroke="#2B7BC8" stroke-width="2"/>
+  <!-- Brain icon -->
+  <path d="M80 90 C60 70 65 40 85 35 C95 30 105 30 115 35 C135 40 140 70 120 90 C115 95 110 100 105 105 C100 110 95 105 90 100 C85 95 80 90 80 90Z" fill="#2B7BC8" opacity="0.9"/>
+  <path d="M100 45 C100 55 95 65 95 75 M85 55 C90 60 95 55 M105 55 C110 60 115 55" stroke="#F7F9FC" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Leaves / twigs -->
+  <path d="M55 130 C45 120 50 110 60 115" stroke="#38A169" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M145 130 C155 120 150 110 140 115" stroke="#38A169" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
