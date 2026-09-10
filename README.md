@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🧠 Therapy Nest
+<img src="therapy_nest/assets/images/AppLogo.png" alt="Therapy Nest App Icon" width="112" height="112" style="border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);" />
+
+# Therapy Nest
 
 **An Evidence-Based, Open-Source Cognitive & Speech Therapy Mobile Platform for Stroke Survivors & Neurorehabilitation**
 
@@ -32,31 +34,51 @@ Over **15 million people worldwide suffer a stroke each year**, with 1 in 3 acqu
 
 ```
 Therapy-Nest/
-├── therapy_nest/              # 📱 Flutter Mobile Application (Android / iOS)
+├── 📱 therapy_nest/                       # Flutter Mobile Application (Main App - Android / iOS)
 │   ├── lib/
-│   │   ├── app/               # App configuration, router (GoRouter), theme engine
-│   │   ├── core/              # Design tokens (AppColors, AppDimens), audio & ASR services
-│   │   ├── data/              # Drift SQLite database, models, repositories
-│   │   └── modules/           # Feature modules (Auth, Home, Therapy, Progress, Assessment)
-│   ├── assets/                # Visual stimuli, icons, Vosk models
-│   └── android/               # Native Android configuration
+│   │   ├── app/                           # App configuration, router (GoRouter), theme engine
+│   │   ├── core/                          # Design tokens, audio & Vosk ASR services
+│   │   ├── data/                          # Drift SQLite database, models, repositories
+│   │   └── modules/                       # Feature modules (Auth, Home, Therapy, Progress, Assessment)
+│   ├── assets/                            # Visual stimuli, icons, Vosk offline acoustic models
+│   └── android/                           # Native Android configuration
 │
-├── backend/                   # ⚡ FastAPI Adaptive IRT & Cloud Engine
+├── ⚡ backend/                            # FastAPI Adaptive IRT & Cloud Engine
 │   ├── app/
-│   │   ├── adaptive_engine.py # Psychometric 2PL IRT item selection & ability calibration
-│   │   ├── config.py          # Environment settings (Supabase, asyncpg pooler)
-│   │   ├── database.py        # Async SQLAlchemy PostgreSQL connection engine
-│   │   ├── models.py          # Relational schema (user_profiles, attempts, items)
-│   │   └── main.py            # FastAPI REST endpoints with Supabase JWT auth
-│   ├── Dockerfile             # Multi-stage container build for cloud deployment
-│   └── requirements.txt       # Python dependencies
+│   │   ├── adaptive_engine.py             # Psychometric 2PL IRT item selection & ability calibration
+│   │   ├── config.py                      # Environment settings (Supabase, asyncpg pooler)
+│   │   ├── database.py                    # Async SQLAlchemy PostgreSQL connection engine
+│   │   ├── models.py                      # Relational schema (user_profiles, attempts, items)
+│   │   └── main.py                        # FastAPI REST endpoints with Supabase JWT auth
+│   ├── Dockerfile                         # Container build for Render / Koyeb cloud deployment
+│   └── requirements.txt                   # Python dependencies
 │
-├── sql/                       # 🗄️ Supabase PostgreSQL Migrations
-│   ├── supabase_profile_setup.sql
-│   ├── therapy_nest_m3_migration.sql
-│   └── therapy_nest_m7_sync_migration.sql
+├── 🗄️ database/                           # Supabase PostgreSQL Migrations & Schemas
+│   ├── supabase_profile_setup.sql         # User profiles & role-based access triggers
+│   ├── therapy_nest_m3_migration.sql      # Exercises, domains & assessment item tables
+│   └── therapy_nest_m7_sync_migration.sql # Telemetry & cross-device sync schema
 │
-└── .gitignore                 # Root secret protection shielding credentials
+├── 🎨 design_inspiration/                 # UI/UX Specifications, Design Tokens & Design Skills
+│   ├── DESIGN-claude.md                   # Clinical design system architecture
+│   ├── design-2.md                        # Component hierarchy & accessibility specs
+│   ├── designV3.md                        # Modern Material 3 neuro-friendly theme tokens
+│   ├── skill-2.md                         # UI engineering workflow patterns
+│   └── skillV3.md                         # Accessibility and micro-interaction guidelines
+│
+├── 📚 project_research_and_development/   # Clinical Research, Benchmarks & Deep Dives
+│   ├── (ChatGpt)deep-research-report.md    # Clinical speech pathology baseline analysis
+│   ├── (Claude)constant-therapy-deep-dive-blueprint.md # Competitive architecture breakdown
+│   ├── (Gemini)Constant Therapy App Analysis.md # Psychometric modeling research
+│   ├── 1.Therapy_Nest_Best_Approach.md    # Implementation roadmap & technical strategy
+│   ├── 2.therapy_nest_app_prompt.md       # Master feature specifications
+│   ├── 3.Setup_Guide.md                   # Development environment setup
+│   ├── 3.1Phase_A_Setup_Guide.md          # Foundation milestone walkthrough
+│   ├── PROJECTPROGRESS.md                 # Longitudinal development logs & sprint history
+│   └── lmArenaDeepsearch.md               # Cognitive exercise bank taxonomy
+│
+├── 🛡️ .gitignore                          # Multi-tier secret protection (credentials, keystores, .env)
+├── ⚖️ LICENSE                             # MIT Open Source License
+└── 📖 README.md                           # Master repository documentation
 ```
 
 ---
