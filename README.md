@@ -207,3 +207,14 @@ This project is open-source software licensed under the **[MIT License](LICENSE)
 
 ### Medical Disclaimer
 *Therapy Nest is intended as a supplementary cognitive and speech practice tool for educational and supportive purposes. It does not provide medical diagnoses or replace clinical therapy prescribed by licensed medical practitioners, neurologists, or certified Speech-Language Pathologists (SLPs).*
+
+---
+
+## 📬 Contact & Support
+
+- **Project Lead & Maintainer**: Abdur Rehman ([@CodeWith-AR](https://github.com/CodeWith-AR))
+- **Direct Email**: [mailrehman90527300@gmail.com](mailto:mailrehman90527300@gmail.com)
+- **GitHub Issues & Discussions**: [https://github.com/CodeWith-AR/Therapy-Nest/issues](https://github.com/CodeWith-AR/Therapy-Nest/issues)
+- **Web Showcase & Help Center**: [https://therapy-nest-web.vercel.app](https://therapy-nest-web.vercel.app)
+- **Website Repository**: [CodeWith-AR/Therapy-Nest-Web](https://github.com/CodeWith-AR/Therapy-Nest-Web)
+
